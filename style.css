@@ -1,0 +1,43 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#logo{
+    position: absolute;
+    top:25vh;
+    left:10px;
+    display: flex;
+    gap: 10px;
+}
+#chess-board{
+    width: 50rem;
+    height: 40.7rem;
+    display: flex;
+    border: 1px solid black;
+    align-self: center;
+    justify-self: center;
+    margin-top: 5vh;
+    flex-direction: column-reverse;
+    justify-content: stretch;
+}
+.bsq,.wsq{
+    width: 6.25rem;
+    height: 5rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display: flex;
+}
+.bsq{
+    background-color: rgb(172, 236, 108);
+}
+
+.bsq:hover,.wsq:hover{
+    background-color: rgba(48, 230, 142, 0.4);
+}
+.bsq:active,.wsq:active{
+    background-color: rgba(48, 230, 142, 0.6);
+ }

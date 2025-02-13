@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="logo">
+        <i class="fa-solid fa-chess-board fa-3x"></i>
+        <h1>Chess By Subash</h1>
+    </div>
+    <div id="white-pieces"></div>
+    <div id="black-pieces"></div>
+    <div id="chess-board">
+        <div class="row">
+          <div id="a1" class="bsq sqr">
+            <i class="fa-regular fa-chess-rook fa-4x wht"></i>
+          </div>
+          <div id="b1" class="wsq sqr">
+            <i class="fa-regular fa-chess-knight fa-4x wht"></i>
+          </div>
+          <div id="c1" class="bsq sqr">
+            <i class="fa-regular fa-chess-bishop fa-4x wht"></i>
+          </div>
+          <div id="d1" class="wsq sqr">
+            <i class="fa-regular fa-chess-queen fa-4x wht"></i>
+          </div>
+          <div id="e1" class="bsq sqr">
+            <i class="fa-regular fa-chess-king fa-4x wht"></i>
+          </div>
+          <div id="f1" class="wsq sqr">
+            <i class="fa-regular fa-chess-bishop fa-4x wht"></i>
+          </div>
+          <div id="g1" class="bsq sqr">
+            <i class="fa-regular fa-chess-knight fa-4x wht"></i>
+          </div>
+          <div id="h1" class="wsq sqr">
+            <i class="fa-regular fa-chess-rook fa-4x wht"></i>
+          </div>
+        </div>
+        <div class="row">
+            <div id="a2" class="wsq sqr">
+                <i class="fa-regular fa-chess-pawn fa-4x wht"></i>
+            </div>
+            <div id="b2" class="bsq sqr">
+                <i class="fa-regular fa-chess-pawn fa-4x wht"></i>
+            </div>
+            <div id="c2" class="wsq sqr">
+                <i class="fa-regular fa-chess-pawn fa-4x wht"></i>
+            </div>
+            <div id="d2" class="bsq sqr">
+                <i class="fa-regular fa-chess-pawn fa-4x wht"></i>
+            </div>
+            <div id="e2" class="wsq sqr">
+                <i class="fa-regular fa-chess-pawn fa-4x wht"></i>
+            </div>
+            <div id="f2" class="bsq sqr">
+                <i class="fa-regular fa-chess-pawn fa-4x wht"></i>
+            </div>
+            <div id="g2" class="wsq sqr">
+                <i class="fa-regular fa-chess-pawn fa-4x wht"></i>
+            </div>
+            <div id="h2" class="bsq sqr">
+                <i class="fa-regular fa-chess-pawn fa-4x wht"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div id="a3" class="bsq sqr"></div>
+            <div id="b3" class="wsq sqr"></div>
+            <div id="c3" class="bsq sqr"></div>
+            <div id="d3" class="wsq sqr"></div>
+            <div id="e3" class="bsq sqr"></div>
+            <div id="f3" class="wsq sqr"></div>
+            <div id="g3" class="bsq sqr"></div>
+            <div id="h3" class="wsq sqr"></div>
+        </div>
+        <div class="row">
+            <div id="a4" class="wsq sqr"></div>
+            <div id="b4" class="bsq sqr"></div>
+            <div id="c4" class="wsq sqr"></div>
+            <div id="d4" class="bsq sqr"></div>
+            <div id="e4" class="wsq sqr"></div>
+            <div id="f4" class="bsq sqr"></div>
+            <div id="g4" class="wsq sqr"></div>
+            <div id="h4" class="bsq sqr"></div>
+          </div>
+        <div class="row">
+            <div id="a5" class="bsq sqr"></div>
+            <div id="b5" class="wsq sqr"></div>
+            <div id="c5" class="bsq sqr"></div>
+            <div id="d5" class="wsq sqr"></div>
+            <div id="e5" class="bsq sqr"></div>
+            <div id="f5" class="wsq sqr"></div>
+            <div id="g5" class="bsq sqr"></div>
+            <div id="h5" class="wsq sqr"></div>
+        </div>
+        <div class="row">
+            <div id="a6" class="wsq sqr"></div>
+            <div id="b6" class="bsq sqr"></div>
+            <div id="c6" class="wsq sqr"></div>
+            <div id="d6"class="bsq sqr"></div>
+            <div id="e6"class="wsq sqr"></div>
+            <div id="f6"class="bsq sqr"></div>
+            <div id="g6"class="wsq sqr"></div>
+            <div id="h6"class="bsq sqr"></div>
+        </div>
+        <div class="row">
+            <div id="a7"class="bsq sqr">
+                <i class="fa-solid fa-chess-pawn fa-4x blk"></i>
+            </div>
+            <div id="b7"class="wsq sqr">
+                <i class="fa-solid fa-chess-pawn fa-4x blk"></i>
+            </div>
+            <div id="c7"class="bsq sqr">
+                <i class="fa-solid fa-chess-pawn fa-4x blk"></i>
+            </div>
+            <div id="d7"class="wsq sqr">
+                <i class="fa-solid fa-chess-pawn fa-4x blk"></i>
+            </div>
+            <div id="e7"class="bsq sqr">
+                <i class="fa-solid fa-chess-pawn fa-4x blk"></i>
+            </div>
+            <div id="f7"class="wsq sqr">
+                <i class="fa-solid fa-chess-pawn fa-4x blk"></i>
+            </div>
+            <div id="g7"class="bsq sqr">
+                <i class="fa-solid fa-chess-pawn fa-4x blk"></i>
+            </div>
+            <div id="h7"class="wsq sqr">
+                <i class="fa-solid fa-chess-pawn fa-4x blk"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div id="a8"class="wsq sqr">
+                <i class="fa-solid fa-chess-rook fa-4x blk"></i>
+            </div>
+            <div id="b8"class="bsq sqr">
+                <i class="fa-solid fa-chess-knight fa-4x blk"></i>
+            </div>
+            <div id="c8"class="wsq sqr">
+                <i class="fa-solid fa-chess-bishop fa-4x blk"></i>
+            </div>
+            <div id="d8"class="bsq sqr">
+                <i class="fa-solid fa-chess-queen fa-4x blk"></i>
+            </div>
+            <div id="e8"class="wsq sqr">
+                <i class="fa-solid fa-chess-king fa-4x blk"></i>
+            </div>
+            <div id="f8"class="bsq sqr">
+                <i class="fa-solid fa-chess-bishop fa-4x blk"></i>
+            </div>
+            <div id="g8"class="wsq sqr">
+                <i class="fa-solid fa-chess-knight fa-4x blk"></i>
+            </div>
+            <div id="h8"class="bsq sqr">
+                <i class="fa-solid fa-chess-rook fa-4x blk"></i>
+            </div>
+          </div>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
